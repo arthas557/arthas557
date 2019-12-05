@@ -1,0 +1,13 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: arthas557-admin
+logging:
+  level: {level: debug}
+swagger:
+  createName: 1
+  serviceName: 2
+  description: 3
+  startFlag: true

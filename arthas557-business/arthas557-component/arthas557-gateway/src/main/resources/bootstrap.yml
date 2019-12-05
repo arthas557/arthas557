@@ -1,0 +1,40 @@
+spring:
+  cloud:
+    nacos:
+      config: #dataId格式:${prefix}-${spring.profile.active}.${file-extension}
+        server-addr: www.mybatis.top:8848 #nacos地址
+        file-extension: yaml #nacos配置文件后缀
+        prefix: arthas557-gateway #默认:spring.application.name
+        shared-dataids: arthas557-common.yaml #nacos 多配置加载http://www.cnblogs.com/didispace/p/10358157.html,貌似只能在default_group内
+        refreshable-dataids: arthas557-common.yaml #自动刷新
+      discovery:
+        server-addr: www.mybatis.top:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true #通过eureka路由服务
+          lower-case-service-id: true #默认为大写,此处开启小写
+      routes:
+        - id: arthas557-admin
+          uri: lb://arthas557-admin #http://127.0.0.1:8003/admin/
+          predicates:
+            - Path=/admin/**
+          filters:
+            - StripPrefix=1
+  main:
+    allow-bean-definition-overriding: true
+#断路器 超时配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
