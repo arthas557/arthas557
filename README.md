@@ -16,11 +16,13 @@
 | arthas557-study  | 异常模拟/新框架学习 |
 
 ##### 本地hosts配置
-|  模块   | 说明  |
+|  域名   | 说明  |
 |  ----  | ----  |
-|   | 依赖管理,通用底层 |
-| arthas557-business  | 手脚架-后台 |
-| arthas557-study  | 异常模拟/新框架学习 |
+| arthas557.nacos.com  | nacos |
+| arthas557.mysql.com  | mysql |
+| arthas557.redis.com  | redis |
+| arthas557.mq.com  | mq |
+| arthas557.mongo.com  | mongo |
 #### 安装教程
 
 1. xxxx

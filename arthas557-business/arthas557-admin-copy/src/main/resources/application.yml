@@ -3,10 +3,9 @@ server:
 
 spring:
   application:
-    name: arthas557-admin
+    name: arthas557-admin-copy
 logging:
   level: {level: debug}
-
 swagger:
   createName: 1
   serviceName: 2
