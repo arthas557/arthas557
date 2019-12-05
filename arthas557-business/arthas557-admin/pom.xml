@@ -87,7 +87,7 @@
                 &lt;!&ndash; end&ndash;&gt;
             </exclusions>
         </dependency>-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
             <exclusions>
@@ -96,11 +96,10 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.9.0.RELEASE</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.google.guava</groupId>

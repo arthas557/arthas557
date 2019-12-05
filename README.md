@@ -14,6 +14,13 @@
 | arthas557-framework  | 依赖管理,通用底层 |
 | arthas557-business  | 手脚架-后台 |
 | arthas557-study  | 异常模拟/新框架学习 |
+
+##### 本地hosts配置
+|  模块   | 说明  |
+|  ----  | ----  |
+|   | 依赖管理,通用底层 |
+| arthas557-business  | 手脚架-后台 |
+| arthas557-study  | 异常模拟/新框架学习 |
 #### 安装教程
 
 1. xxxx

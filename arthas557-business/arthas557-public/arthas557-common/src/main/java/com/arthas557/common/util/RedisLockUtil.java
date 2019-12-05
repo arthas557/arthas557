@@ -1,3 +1,4 @@
+/*
 package com.arthas557.common.util;
 
 import com.arthas557.common.constants.Symbol;
@@ -19,11 +20,13 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
   * <a href='https://blog.csdn.net/qq_28397259/article/details/80839072'>简单的redis锁工具类<a/>
   * <a href='https://www.imooc.com/article/34098'><a/>
   * @author wangty
-  */
+  *//*
+
 @Slf4j
 //@Component
 public class RedisLockUtil {
@@ -42,13 +45,15 @@ public class RedisLockUtil {
                 "end ";
     }
 
-    /**
+    */
+/**
      * 获取redis的key<br/>
      * @param qualifiedMethodName 需要进行分布式锁控制的方法全限定名
      * @param requestIp 请求ip
      * @param groupByIp key是否加上Ip(存在多个中间层系统)
      * @return redis key
-     */
+     *//*
+
     public static String getRedisKey(String qualifiedMethodName,String requestIp,boolean groupByIp){
         if(StrUtil.isBlank(qualifiedMethodName)){
             throw new BusinessException("当前请求资源名为空");
@@ -62,14 +67,16 @@ public class RedisLockUtil {
         return requestIp.concat(Symbol.COLON).concat(qualifiedMethodName);
     }
 
-    /**
+    */
+/**
      * 获取redis的key<br/>
      * @param qualifiedMethodName 需要进行分布式锁控制的方法全限定名
      * @param httpServletRequest 请求
      * @param groupByIp key是否加上Ip(存在多个中间层系统)
      * @see Jedis#set(java.lang.String, java.lang.String, java.lang.String, java.lang.String, long)
      * @return redis key
-     */
+     *//*
+
     public static String getRedisKey(String qualifiedMethodName, HttpServletRequest httpServletRequest, boolean groupByIp){
         if(StrUtil.isNotBlank(qualifiedMethodName)){
             throw new BusinessException("当前请求资源名为空");
@@ -84,12 +91,14 @@ public class RedisLockUtil {
         return HttpUtil.getClientIP(httpServletRequest).concat(Symbol.COLON).concat(qualifiedMethodName);
     }
 
-    /**
+    */
+/**
      * 获取锁
      * @param key key
      * @param uniqueId value,需全局唯一.
      * @return 获取锁是否成功
-     */
+     *//*
+
     public static boolean lock(String key,String uniqueId){
         try {
             RedisCallback<String> callback = (connection) -> {
@@ -111,11 +120,13 @@ public class RedisLockUtil {
 
     }
 
-    /**
+    */
+/**
      * 解锁
      *@param key key
      * @param uniqueId value,需全局唯一.
-     */
+     *//*
+
     public static boolean unLock(String key,String uniqueId){
         // 释放锁的时候，有可能因为持锁之后方法执行时间大于锁的有效期，此时有可能已经被另外一个线程持有锁，所以不能直接删除
         try {
@@ -155,3 +166,4 @@ public class RedisLockUtil {
         RedisLockUtil.redisTemplate = redisTemplate;
     }
 }
+*/

@@ -5,7 +5,6 @@
 
 package com.arthas557.swagger;
 
-import com.alibaba.nacos.client.config.NacosConfigService;
 import com.google.common.base.Predicate;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
