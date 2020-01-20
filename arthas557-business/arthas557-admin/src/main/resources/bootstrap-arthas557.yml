@@ -10,6 +10,7 @@ spring:
           - {dataId: 'arthas557-common.yaml',group: 'arthas557-alibaba',refresh: 'true'}
         group: arthas557-alibaba
         namespace: 7d00d36a-9bd3-45b8-a3eb-027f6ac6a6a7
+
       discovery:
         server-addr: arthas557.nacos.com:8848
         group: arthas557-alibaba

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CustomerExceptionResovler implements HandlerExceptionResolver {
     @Override
     public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
-        log.error("此处为自定义异常处理",ex);
+        log.trace("此处为自定义异常处理",ex);
         return null;
     }
 }
