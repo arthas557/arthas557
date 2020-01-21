@@ -71,7 +71,7 @@ spring:
     allow-bean-definition-overriding: true
 
   rabbitmq:
-    host: 47.111.12.202
+    host: arthas557.rabbit.com
     port: 5672
     username: guest
     password: guest

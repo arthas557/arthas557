@@ -14,14 +14,14 @@ import java.util.Date;
  */
 @Getter
 @Setter
-public class MBaseEntity {
+public class MysqlBaseEntity extends AbstractEntity {
 
     @TableId(type = IdType.AUTO)
     private Long id;
-    private Date createTime;
-    private Date modifyTime;
+
     @TableLogic
     private String deleted;
+
     @Version
     private Long version;
 

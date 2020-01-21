@@ -12,11 +12,9 @@ import java.util.Date;
  */
 @Getter
 @Setter
-public class OBaseEntity {
+public class OracleBaseEntity {
 
     private Long id;
-    private Date createTime;
-    private Date modifyTime;
     @TableLogic
     private String deleted;
     @Version
